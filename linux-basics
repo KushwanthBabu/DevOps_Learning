@@ -1,0 +1,20 @@
+#LINUX Commands were directly used on the cloud servers, Containers cause DevOps runs everything on linux. APIs, Databases and servers everything runs on linux, it offers CLI design, easy remote access and lightweight.
+
+Some Important commands for DevOps:
+
+For Directory Management:
+ls -lah  - List files with permissions & sizes
+du -sh * - Check folder sizes
+df -h    - Disk space usage
+stat file.txt - Detailed info about file
+
+File Viewing & Editing:
+cat file.txt
+less file.txt
+head -n 20 file.txt
+tail -n 50 file.txt
+tail -f app.log
+
+File Editing:
+nano file.txt
+vi file.txt
