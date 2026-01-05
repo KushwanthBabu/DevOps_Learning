@@ -1,0 +1,33 @@
+Docker is a open source tool that helps to package an application and its dependenices so it runs same on any system. We use docker in DevOps to eliminate OS issues, to use CI/CD pipelines, Base for Kubernetes and known for lightweight compared to VM.
+
+DockerFile Concepts:
+
+Image: Blueprint of an app
+Container: Running instance of an image
+Dockerfile: Instructions to build an image
+
+Dockerfile:
+
+FROM ubuntu:latest
+Run apt update &&  apt install -y curl
+CMD["echo", "Hello DevOps from Docker"]
+
+Basic Commands On Docker:
+
+## Image Commands
+docker pull ubuntu
+docker images
+docker rmi image_id
+
+## Container Commands
+docker run ubuntu
+docker ps
+docker ps -a
+docker stop container_id
+docker rm container_id
+
+## Build Image
+docker build -t my-first-image .
+
+## Run Container
+docker run my-first-image
