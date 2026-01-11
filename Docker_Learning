@@ -31,3 +31,17 @@ docker build -t my-first-image .
 
 ## Run Container
 docker run my-first-image
+
+Example: 
+we will try with a ngnix/DockerFile:
+FROM nginx:latest
+COPY index.html /usr/share/nginx/html/index.html
+
+Explaination:
+This container runs an NGINX web server using Docker
+
+Steps:
+1. Build the image
+2. Run container on port 8080
+3. Access from browser
+
